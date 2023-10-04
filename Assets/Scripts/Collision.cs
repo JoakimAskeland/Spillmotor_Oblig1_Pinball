@@ -20,18 +20,28 @@ public class Collision : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(UnityEngine.Collision other)
-    {
-        Debug.LogWarning($"the ball collided with {other.gameObject.name}");
+    //private void OnCollisionEnter(UnityEngine.Collision other)
+    //{
+    //    Debug.LogWarning($"the ball collided with {other.gameObject.name}");
 
-        if (other.relativeVelocity.magnitude > 1)
-        {
-            Vector3 forceDirection = -other.contacts[0].normal;
+    //    if (other.relativeVelocity.magnitude > 1)
+    //    {
+    //        Vector3 forceDirection = -other.contacts[0].normal;
 
-            rb.AddForce(forceDirection * forceMultiplier * other.relativeVelocity.magnitude, ForceMode.Impulse);
-        }
+    //        rb.AddForce(forceDirection * forceMultiplier * other.relativeVelocity.magnitude, ForceMode.Impulse);
+    //    }
 
-    }
+    //}
+
+    //private void OnCollisionEnter(UnityEngine.Collision collision)
+    //{
+    //    if (collision.relativeVelocity.magnitude > 1)
+    //    {
+    //        Vector3 forceDirection = -collision.contacts[0].normal;
+
+    //        rb.AddForce(forceDirection * forceMultiplier * collision.relativeVelocity.magnitude, ForceMode.Impulse);
+    //    }
+    //}
 
     //private void OnCollisionEnter(Collision other)
     //{
