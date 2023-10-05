@@ -30,37 +30,4 @@ public class Collision : MonoBehaviour
             SceneManager.LoadScene(0);
         }
     }
-
-    //private void OnCollisionEnter(UnityEngine.Collision other)
-    //{
-    //    Debug.LogWarning($"the ball collided with {other.gameObject.name}");
-
-    //    if (other.relativeVelocity.magnitude > 1)
-    //    {
-    //        Vector3 forceDirection = -other.contacts[0].normal;
-
-    //        rb.AddForce(forceDirection * forceMultiplier * other.relativeVelocity.magnitude, ForceMode.Impulse);
-    //    }
-
-    //}
-
-    //private void OnCollisionEnter(UnityEngine.Collision collision)
-    //{
-    //    if (collision.relativeVelocity.magnitude > 1)
-    //    {
-    //        Vector3 forceDirection = -collision.contacts[0].normal;
-
-    //        rb.AddForce(forceDirection * forceMultiplier * collision.relativeVelocity.magnitude, ForceMode.Impulse);
-    //    }
-    //}
-
-    //private void OnCollisionEnter(Collision other)
-    //{
-    //    Debug.LogWarning($"this object collider with {other.gameObject.name}");
-
-    //    //if (collision.relativeVelocity.magnitude > 1) 
-    //    //{
-    //    //    Vector3 forceDirection = -collision.contacts[0].normal;
-    //    //}
-    //}
 }
