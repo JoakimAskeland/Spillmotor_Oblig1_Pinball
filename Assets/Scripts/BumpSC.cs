@@ -29,23 +29,24 @@ public class BumpSC : MonoBehaviour
     //}
 
     public static BumpSC Instance { get; private set; }
-    public float score = 0;
+
+    [SerializeField] UI UIcs;
+
+    public int scoreValue = 100;
 
     private void OnCollisionEnter(UnityEngine.Collision collision)
     {
         Vector3 forceDirection = collision.GetContact(0).normal;
         collision.gameObject.GetComponent<Rigidbody>().AddForce(forceDirection * 50, ForceMode.Impulse);
 
-        score += 10;
-
-        Debug.Log("Score: " + score);
+        UIcs.newScore(scoreValue);
     }
 
-    private void OnGUI()
-    {
-        GUI.Box(new Rect(100, 100, 200, 100), "Score: " + score); 
+    //private void OnGUI()
+    //{
+    //    GUI.Box(new Rect(100, 100, 200, 100), "Score: " + score); 
 
-    }
+    //}
 
 
     //public int bumperForce = 800;
