@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BumpSC : MonoBehaviour
 {
@@ -27,10 +28,23 @@ public class BumpSC : MonoBehaviour
     //    }
     //}
 
+    public static BumpSC Instance { get; private set; }
+    public float score = 0;
+
     private void OnCollisionEnter(UnityEngine.Collision collision)
     {
         Vector3 forceDirection = collision.GetContact(0).normal;
         collision.gameObject.GetComponent<Rigidbody>().AddForce(forceDirection * 50, ForceMode.Impulse);
+
+        score += 10;
+
+        Debug.Log("Score: " + score);
+    }
+
+    private void OnGUI()
+    {
+        GUI.Box(new Rect(100, 100, 200, 100), "Score: " + score); 
+
     }
 
 
