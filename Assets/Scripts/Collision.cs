@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collision : MonoBehaviour
 {
@@ -25,7 +26,8 @@ public class Collision : MonoBehaviour
         if (other.gameObject.name == "Wall-Bottom")
         {
             Debug.Log("Game Over. plz stop");
-            Application.Quit();
+            //Application.Quit();
+            SceneManager.LoadScene(0);
         }
     }
 
