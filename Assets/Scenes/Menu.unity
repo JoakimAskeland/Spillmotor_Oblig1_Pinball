@@ -209,8 +209,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81391872}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00010792932, y: 0.9997019, z: 0.0044980664, w: -0.023997795}
-  m_LocalPosition: {x: 4.033687, y: 7.646058, z: 9.740154}
+  m_LocalRotation: {x: -0.002285294, y: 0.99589676, z: -0.08656185, w: -0.026297804}
+  m_LocalPosition: {x: -1174.8864, y: 24.044466, z: 98.96377}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -954,7 +954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1183,8 +1183,8 @@ Canvas:
   m_GameObject: {fileID: 1898431120}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 81391874}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

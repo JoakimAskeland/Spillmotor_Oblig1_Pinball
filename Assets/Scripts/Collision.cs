@@ -20,6 +20,15 @@ public class Collision : MonoBehaviour
         
     }
 
+    private void OnCollisionEnter(UnityEngine.Collision other)
+    {
+        if (other.gameObject.name == "Wall-Bottom")
+        {
+            Debug.Log("Game Over. plz stop");
+            Application.Quit();
+        }
+    }
+
     //private void OnCollisionEnter(UnityEngine.Collision other)
     //{
     //    Debug.LogWarning($"the ball collided with {other.gameObject.name}");
